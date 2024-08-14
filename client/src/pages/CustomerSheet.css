@@ -1,0 +1,211 @@
+.customer-sheet-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.customer-sheet-card {
+    margin: 0 auto;
+    max-width: 900px; /* Adjust width */
+    width: 100%; /* Ensures card takes full available width */
+    padding: 20px; 
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(51, 4, 138);
+    
+}
+
+.submit-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+    
+}
+
+.submit-button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #0056b3; /* Darker blue for hover effect */
+}
+
+
+.animated-card {
+    transition: transform 0.5s ease;
+}
+
+.animated-card:hover {
+    transform: scale(1.02);
+}
+
+.animated-row {
+    margin-bottom: 15px;
+}
+.animated-input {
+    font-size: 16px; /* Adjust font size */
+    padding: 10px; /* Adjust padding */
+    border-radius: 5px; /* Optional: round the corners */
+    border: 1px solid #ced4da; /* Adds a border to inputs */
+    width: 100%; /* Makes inputs stretch to full width of column */
+}
+
+.animated-input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+
+
+.second-form-container,
+.third-form-container,
+.fourth-form-container,
+.fifth-form-container,
+.sixth-form-container,
+.seventh-form-container,
+.eighth-form-container,
+.ninth-form-container{
+    margin-top: 10px;
+    width: 100%;}
+
+    .tenth-form-container{
+        margin-top: 10px;
+        width: 315%;
+
+    }
+
+
+
+.third-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.fourth-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.fifth-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.sixth-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.seventh-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.eighth-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.ninth-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.tenth-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+.submit-button {
+    background-color: #25323c !important; /* Couleur gris */
+    border: none !important;
+    color: white !important;
+    padding: 5px 20px !important;
+    font-size: 16px !important;
+    cursor: pointer !important;
+    border-radius: 4px !important; /* Optionnel: arrondir les coins */
+}
+
+.submit-button:hover {
+    background-color: #25323c !important; /* Couleur gris plus foncé pour l'effet de survol */
+}
+
+
+/* Optional: Set a minimum height for forms to ensure consistency */
+.customer-sheet-card {
+    min-height: 500px; /* Adjust as needed */
+}
+
+/* Ensure the form width is consistent */
+form {
+    width: 100%;
+}
+
+.syntese-form {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .syntese-form h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+  }
+  
+  .syntese-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .syntese-form .form-group label {
+    font-weight: bold;
+  }
+  
+  .syntese-form .form-group p {
+    margin-bottom: 5px;
+  }
+  
+  .syntese-form .form-group .form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  

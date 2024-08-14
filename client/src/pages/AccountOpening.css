@@ -1,0 +1,228 @@
+/* Styles globaux pour le formulaire */
+.animated-form {
+    margin: 2rem auto;
+    max-width: 900px;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.animated-input {
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.animated-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+}
+
+.button-container {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* Styles pour le bouton Soumettre */
+.submit-button {
+    background-color: #025214 !important; /* Vert */
+    border-color: #025214 !important; /* Vert */
+    color: white !important;
+    border: none !important; /* Enlève la bordure par défaut */
+    padding: 0.5rem 1rem !important; /* Ajoute du padding */
+    border-radius: 25px !important; /* Coins arrondis */
+    font-size: 16px !important; /* Taille du texte */
+    cursor: pointer !important; /* Curseur en forme de main */
+    transition: background-color 0.3s  border-color 0.3s !important; /* Transition pour le changement de couleur */
+}
+
+.submit-button:hover {
+    background-color: #01430f !important; /* Vert foncé au survol */
+    border-color: #01430f !important; /* Vert foncé au survol */
+}
+
+/* Styles pour les cartes */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Espacement entre les cartes */
+}
+
+.card {
+    flex: 1 1 22%; /* Ajuste la largeur des cartes (4 cartes par ligne) */
+    max-width: 22%; /* Limite la largeur des cartes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour les cartes */
+    border-radius: 8px; /* Coins arrondis pour les cartes */
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-text {
+    font-weight: bold;
+}
+
+.card-group {
+    margin-bottom: 1rem;
+}
+.profile-title {
+    /* Ajoute une bande rose */
+    color: #260363; /* Couleur du texte, ajustez selon vos besoins */
+    text-align: center; /* Centre le texte horizontalement */
+    padding: 10px 20px; /* Ajoute un peu de rembourrage autour du texte */
+    border-radius: 5px; /* Optionnel : ajoute des coins arrondis */
+    width: fit-content; /* Ajuste la largeur au contenu */
+    margin: 0 auto; /* Centre l'élément horizontalement dans son conteneur */
+  }
+
+
+  .form-ACTIONNAIRES {
+     /* Ajoute une bande rose */
+     color: #260363; /* Couleur du texte, ajustez selon vos besoins */
+     text-align: center; /* Centre le texte horizontalement */
+     padding: 10px 20px; /* Ajoute un peu de rembourrage autour du texte */
+     border-radius: 5px; /* Optionnel : ajoute des coins arrondis */
+     width: fit-content; /* Ajuste la largeur au contenu */
+     margin: 0 auto; /* Centre l'élément horizontalement dans son conteneur */
+  }
+
+
+.form-Action{
+    /* Ajoute une bande rose */
+    color: #260363; /* Couleur du texte, ajustez selon vos besoins */
+    text-align: center; /* Centre le texte horizontalement */
+    padding: 10px 20px; /* Ajoute un peu de rembourrage autour du texte */
+    border-radius: 5px; /* Optionnel : ajoute des coins arrondis */
+    width: fit-content; /* Ajuste la largeur au contenu */
+    margin: 0 auto; /* Centre l'élément horizontalement dans son conteneur */
+   }
+
+  .form-Admin {
+   /* Ajoute une bande rose */
+   color: #260363; /* Couleur du texte, ajustez selon vos besoins */
+   text-align: center; /* Centre le texte horizontalement */
+   padding: 10px 20px; /* Ajoute un peu de rembourrage autour du texte */
+   border-radius: 5px; /* Optionnel : ajoute des coins arrondis */
+   width: fit-content; /* Ajuste la largeur au contenu */
+   margin: 0 auto; /* Centre l'élément horizontalement dans son conteneur */
+  }
+
+
+  .form-dirigeant {
+    /* Ajoute une bande rose */
+    color: #260363; /* Couleur du texte, ajustez selon vos besoins */
+    text-align: center; /* Centre le texte horizontalement */
+    padding: 10px 20px; /* Ajoute un peu de rembourrage autour du texte */
+    border-radius: 5px; /* Optionnel : ajoute des coins arrondis */
+    width: fit-content; /* Ajuste la largeur au contenu */
+    margin: 0 auto; /* Centre l'élément horizontalement dans son conteneur */
+   }
+
+  
+   .button-container {
+    margin-top: 1rem;
+    text-align: center; /* Centre le bouton horizontalement */
+}
+
+.submit-button {
+    background-color: #025214 !important; /* Vert */
+    border-color: #025214 !important; /* Vert */
+    color: white !important;
+    border: none !important; /* Enlève la bordure par défaut */
+    padding: 0.5rem 1rem !important; /* Ajoute du padding */
+    border-radius: 25px !important; /* Coins arrondis */
+    font-size: 16px !important; /* Taille du texte */
+    cursor: pointer !important; /* Curseur en forme de main */
+    transition: background-color 0.3s, border-color 0.3s !important; /* Transition pour le changement de couleur */
+}
+
+.submit-button:hover {
+    background-color: #01430f !important; /* Vert foncé au survol */
+    border-color: #01430f !important; /* Vert foncé au survol */
+}
+
+
+.print-button {
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .print-button:hover {
+    background-color: #0056b3;
+  }
+  
+
+
+  .button-container-print{
+    display: flex;
+    justify-content: center;
+    
+  }
+
+
+
+.print-button:hover {
+  background-color: #93034b;
+}
+
+.button-container-print {
+    position: relative; /* Ensure the spinner can be positioned absolutely inside */
+  }
+  
+  .print-button {
+    position: relative;
+    padding: 10px 20px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    background-color: #cd0156; /* Green background color */
+    color: white; /* White text color */
+    border: none; /* Remove borders */
+    padding: 10px 20px; /* Add some padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Allow margin and padding to work */
+    font-size: 16px; /* Set font size */
+    margin: 4px 2px; /* Add some margin */
+    cursor: pointer; /* Change cursor to pointer */
+    border-radius: 4px; /* Rounded corners */
+  }
+
+
+.print-button:disabled {
+    background-color: #d3d3d3; /* Light gray background when disabled */
+    color: #a9a9a9; /* Dark gray text when disabled */
+    cursor: not-allowed; /* Change cursor to not-allowed when disabled */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+
+  .button-container-wrapper {
+    display: flex; /* Align children (buttons) in a row */
+    gap: 10px; /* Optional: Adjust spacing between buttons */
+    align-items: center; /* Optional: Center buttons vertically */
+    justify-content: space-between;
+  }
+  
+  
+
+  
