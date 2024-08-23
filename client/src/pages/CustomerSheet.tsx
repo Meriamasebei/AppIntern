@@ -1,6 +1,8 @@
 import React, { useState, useRef } from 'react';
 import { Form, Row, Col, Button, Container, Card } from 'react-bootstrap';
 import './CustomerSheet.css';
+import axios from 'axios';
+import Spinner from '../components/Spinner';
 
 const CustomerSheet: React.FC = () => {
     const [formData, setFormData] = useState({
@@ -62,6 +64,7 @@ const CustomerSheet: React.FC = () => {
     const [isSevenFormSubmitted, setIsSevenFormSubmitted] = useState(false);
     const [isEightFormSubmitted, setIsEightFormSubmitted] = useState(false);
     const [isNinthFormSubmitted, setIsNinthFormSubmitted] = useState(false);
+    const [isGenerating, setIsGenerating] = useState(false);
 
 
     const secondFormRef = useRef<HTMLDivElement>(null);
@@ -82,6 +85,16 @@ const CustomerSheet: React.FC = () => {
             ...prevData,
             [name]: value
         }));
+
+
+        
+
+
+
+        const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+            const { name, value } = e.target;
+            setFormData({ ...formData, [name]: value });
+          };
     };
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -148,6 +161,26 @@ const CustomerSheet: React.FC = () => {
             tenthFormRef.current.scrollIntoView({ behavior: 'smooth' });
         }
     };
+
+
+    
+  
+
+
+  const handleSoumettre = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    e.preventDefault();
+    setIsGenerating(true);
+    axios.post('http://localhost:3000/api/auth/save-dataCustomerSheet', formData)
+      .then(response => {
+        alert('Data saved successfully');
+        setIsGenerating(false);
+      })
+      .catch(error => {
+        console.error('There was an error saving the data!', error);
+      });
+  };
+
+
 
     return (
         <Container className="customer-sheet-container">
@@ -953,15 +986,16 @@ const CustomerSheet: React.FC = () => {
                     </Row>
 
                     <div className="submit-button-container">
-                        <Button type="submit" className="submit-button">
-                            Soumettre
-                        </Button>
+                        <Button type="submit" onClick={handleSoumettre}  className="submit-button" disabled={isGenerating}>
+                        {isGenerating ? <Spinner isOpen={true}  /> : ''} Soumettre </Button>
                     </div>
                 </Form>
             </Card.Body>
         </Card>
     </div>
 )}
+
+
 
 
 </Container>

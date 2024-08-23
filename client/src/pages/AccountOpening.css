@@ -203,6 +203,27 @@
     border-radius: 4px; /* Rounded corners */
   }
 
+  .generate-button{
+    position: relative;
+    padding: 10px 20px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    background-color: #cd0156; /* Green background color */
+    color: white; /* White text color */
+    border: none; /* Remove borders */
+    padding: 10px 20px; /* Add some padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Allow margin and padding to work */
+    font-size: 16px; /* Set font size */
+    margin: 4px 2px; /* Add some margin */
+    cursor: pointer; /* Change cursor to pointer */
+    border-radius: 4px; /* Rounded corners */
+
+  }
+
+ 
+
 
 .print-button:disabled {
     background-color: #d3d3d3; /* Light gray background when disabled */
@@ -222,7 +243,30 @@
     align-items: center; /* Optional: Center buttons vertically */
     justify-content: space-between;
   }
+
+  .identification-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(4, 113, 4); /* Gray background with 80% opacity */
+    width: 470px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    padding: 20px;
+    border-radius: 0px; /* Optional rounded corners */
+  }
   
+  .identification-container h5 {
+    color: white; /* Adjust text color if needed */
+    font-size: 20px; /* Adjust the font size */
+  }
+
+  .animated-input {
+    width: 300px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    font-size: 16px; /* Adjust the font size as needed */
+    padding: 50px; /* Adjust padding as needed */
+    font-weight: bold; /* Make the text bold */
+  }
   
 
   

@@ -1,16 +1,62 @@
-/* Spinner.css or relevant CSS file */
+/* Spinner.css */
 
 .spinner {
-    border: 4px solid rgba(0, 0, 0, 0.1); /* Light border */
-    border-left: 4px solid #000; /* Darker border for the spinning effect */
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    animation: spin 10s linear infinite; /* Change the duration here */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem; /* Tailwind's gap-6 equivalent */
+}
+
+.spinner-title {
+  color: black;
+  font-family: 'Poppins', sans-serif;
+}
+
+.spinner-svg {
+  animation: spin 1s linear infinite;
+  color: #1b5e20; /* Tailwind's text-lime-900 */
+}
+
+.spinner-circle {
+  opacity: 0.25;
+}
+
+.spinner-path {
+  opacity: 0.75;
+}
+
+.spinner-xs {
+  width: 0.5rem; /* Tailwind's w-2 */
+  height: 0.5rem; /* Tailwind's h-2 */
+}
+
+.spinner-sm {
+  width: 1rem; /* Tailwind's w-4 */
+  height: 1rem; /* Tailwind's h-4 */
+}
+
+.spinner-md {
+  width: 1.5rem; /* Tailwind's w-6 */
+  height: 1.5rem; /* Tailwind's h-6 */
+}
+
+.spinner-lg {
+  width: 2rem; /* Tailwind's w-8 */
+  height: 2rem; /* Tailwind's h-8 */
+}
+
+.spinner-xl {
+  width: 2.5rem; /* Tailwind's w-10 */
+  height: 2.5rem; /* Tailwind's h-10 */
+}
+
+.spinner-2xl {
+  width: 3rem; /* Tailwind's w-12 */
+  height: 3rem; /* Tailwind's h-12 */
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
   }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-  
+}

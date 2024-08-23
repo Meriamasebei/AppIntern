@@ -54,7 +54,7 @@ function VerifyOTP() {
                             />
                             <MDBBtn type="submit" className="mb-4 w-100 btn btn-primary">Verify OTP</MDBBtn>
                         </form>
-                        {message && <p className="text-info">{message}</p>}
+                        {message && <div className="text-info">{message}</div>} {/* Use <div> instead of <p> */}
                     </div>
                 </MDBCol>
             </MDBRow>

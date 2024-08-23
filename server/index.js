@@ -28,6 +28,17 @@ mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
 
 app.use('/api/auth', authRoutes);
 
+
+router.get('/connect-workflow', async (req, res) => {
+    try {
+        const response = await axios.get('http://localhost:9090/COMPTE');
+        res.send(`Workflow response: ${response.data}`);
+    } catch (error) {
+        console.error('Error connecting to workflow:', error);
+        res.status(500).send('Failed to connect to workflow');
+    }
+});
+
 app.listen(3000, () => {
     console.log("Server is running on port 3000");
 });

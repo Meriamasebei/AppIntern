@@ -1,0 +1,24 @@
+
+  @media (max-width: 768px) {
+    #form {
+      width: 80% !important; /* Force 70% width on small screens */
+    }
+  }
+  
+  @media (min-width: 768px) {
+    #form {
+      width:50% !important; /* Force 180% width on larger screens */
+    }
+  }
+
+
+
+  .welcome{
+
+    color: #EDB719;
+    position: relative; /* or absolute, fixed, etc., depending on your needs */
+    top: 60px;  /* Adjust this value to move the text down */
+    left: 10px; /* Adjust this value to move the text right */
+    font-size: 40px; /* Size of the text */ /* Text color */
+  
+  }

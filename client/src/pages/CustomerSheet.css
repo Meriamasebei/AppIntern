@@ -86,6 +86,20 @@
     }
 
 
+    .submit-button {
+        background-color: #28a745; /* Green background color */
+        color: white; /* White text color */
+        border: none; /* Remove borders */
+        padding: 10px 20px; /* Add some padding */
+        text-align: center; /* Center text */
+        text-decoration: none; /* Remove underline */
+        display: inline-block; /* Allow margin and padding to work */
+        font-size: 16px; /* Set font size */
+        margin: 4px 2px; /* Add some margin */
+        cursor: pointer; /* Change cursor to pointer */
+        border-radius: 4px; /* Rounded corners */
+      }
+      
 
 .third-form-container {
     display: flex;
@@ -153,7 +167,7 @@
 
 
 .submit-button {
-    background-color: #25323c !important; /* Couleur gris */
+    background-color: #d35400 !important; /* Couleur gris */
     border: none !important;
     color: white !important;
     padding: 5px 20px !important;
@@ -166,7 +180,7 @@
     background-color: #25323c !important; /* Couleur gris plus foncé pour l'effet de survol */
 }
 
-
+ç
 /* Optional: Set a minimum height for forms to ensure consistency */
 .customer-sheet-card {
     min-height: 500px; /* Adjust as needed */

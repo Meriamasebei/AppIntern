@@ -43,7 +43,7 @@ function ForgotPassword() {
                             />
                             <MDBBtn type="submit" className="mb-4 w-100 btn btn-primary">Send OTP</MDBBtn>
                         </form>
-                        {message && <p className="text-info">{message}</p>}
+                        {message && <h4 className="text-info">{message}</h4>}
                     </div>
                 </MDBCol>
             </MDBRow>
